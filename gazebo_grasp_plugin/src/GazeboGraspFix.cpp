@@ -418,7 +418,7 @@ void GazeboGraspFix::OnUpdate() {
         // std::cout<<"Number applied forces on "<<objName<<": "<<objContInfo.appliedForces.size()<<std::endl;
         
         float minAngleDiff= this->forcesAngleTolerance; //120 * M_PI/180;
-        if (!checkGrip(objContInfo.appliedForces, minAngleDiff, 0.3)) 
+        if (!checkGrip(objContInfo.appliedForces, minAngleDiff, 0.05))
             continue;
         
         // add to "gripped objects" 
