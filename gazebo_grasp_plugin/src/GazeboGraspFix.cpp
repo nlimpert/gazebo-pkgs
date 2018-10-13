@@ -576,7 +576,7 @@ void GazeboGraspFix::OnUpdate()
     // ------------------- 
 
     float minAngleDiff = this->forcesAngleTolerance; //120 * M_PI/180;
-    if (!CheckGrip(objContInfo.appliedForces, minAngleDiff, 0.3))
+    if (!CheckGrip(objContInfo.appliedForces, minAngleDiff, 0.05))
       continue;
 
     // add to "gripped objects"
