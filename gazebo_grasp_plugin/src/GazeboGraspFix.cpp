@@ -638,8 +638,8 @@ bool GazeboGraspFix::checkGrip(const std::vector<gazebo::math::Vector3>& forces,
         std::cerr<<"ERROR: checkGrip: always specify a lengthRatio of [0..1]"<<std::endl;
         return false;
     }
-    if (minAngleDiff < M_PI_2){
-        std::cerr<<"ERROR: checkGrip: min angle must be at least 90 degrees (PI/2)"<<std::endl;
+    if (minAngleDiff < M_PI_4){
+        std::cerr<<"ERROR: checkGrip: min angle must be at least 45 degrees (PI/4)"<<std::endl;
         return false;
     }
     std::vector<gazebo::math::Vector3>::const_iterator it1, it2;
