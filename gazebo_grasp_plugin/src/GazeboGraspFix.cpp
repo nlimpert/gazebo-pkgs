@@ -455,9 +455,9 @@ bool CheckGrip(const std::vector<GzVector3> &forces,
               std::endl;
     return false;
   }
-  if (minAngleDiff < M_PI_2)
+  if (minAngleDiff < M_PI_4)
   {
-    std::cerr << "ERROR: CheckGrip: min angle must be at least 90 degrees (PI/2)" <<
+    std::cerr << "ERROR: CheckGrip: min angle must be at least 45 degrees (PI/4)" <<
               std::endl;
     return false;
   }
